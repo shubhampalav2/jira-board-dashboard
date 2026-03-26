@@ -1,8 +1,9 @@
 import TaskForm from './components/TaskForm/TaskForm';
 import './App.css'
+import TaskColumn from './components/common/TaskColumn/TaskColumn';
 
 function App() {
-
+  const categories: Array<string> = ["Todo", "In Progress", "Product Review", "Testing", "Completed"];
   return (
     <div className="app">
       <header className='app-header'>
@@ -10,11 +11,9 @@ function App() {
         <TaskForm />
       </header>
       <main className="app-main">
-        <section>Section 1</section>
-        <section>Section 2</section>
-        <section>Section 3</section>
-        <section>Section 4</section>
-
+        {categories.map((title: string) => (
+          <TaskColumn title={title} key={title} />
+        ))}
       </main>
     </div>
   )

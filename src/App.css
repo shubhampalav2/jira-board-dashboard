@@ -1,10 +1,14 @@
 .app {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .app-header {
     justify-self: center;
+    width: min(100%, 960px);
+    padding: 0 20px 24px;
 }
 
 .main-heading {
@@ -14,7 +18,27 @@
 
 .app-main {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
     padding: 20px 8%;
-    border-top: 1px solid black;
+    border-top: 1px solid #dcdcdc;
+    box-sizing: border-box;
+    overflow-y: visible;
+}
+
+@media (max-width: 768px) {
+    .app-header {
+        padding: 0 16px 20px;
+    }
+
+    .app-main {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 16px;
+        padding: 20px 16px 24px;
+        overflow-x: auto;
+        overflow-y: visible;
+        -webkit-overflow-scrolling: touch;
+    }
 }
