@@ -1,15 +1,16 @@
 import Tag from "../common/Tags/Tag";
 import deleteIcon from "../../assets/deleteIcon.webp";
 import "./TaskCard.css";
-export default function TaskCard() {
+import type { taskCard } from "../../todoInterfaces";
+export default function TaskCard({ task, tags, deleteTask, id }: taskCard) {
     return (<article className="task_card">
-        <p className="task-text">This is a sample Task</p>
+        <p className="task-text">{task}</p>
         <div className="task_card_bottom_line">
             <div className="task-card-tags">
-                <Tag name="DEV" />
-                <Tag name="QA" />
+                {tags.map((tag: string) =>
+                    <Tag key={tag} name={tag} isTag />)}
             </div>
-            <div className="task-delete">
+            <div className="task-delete" onClick={() => deleteTask(id)}>
                 <img src={deleteIcon} alt="delete icon" className="delete_icon" />
             </div>
         </div>
