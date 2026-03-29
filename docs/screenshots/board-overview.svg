@@ -1,0 +1,49 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1440" height="900" fill="#F4F7FB"/>
+  <rect x="48" y="40" width="1344" height="112" rx="28" fill="#FFFFFF"/>
+  <text x="96" y="94" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="700">Jira Board Dashboard</text>
+  <rect x="96" y="112" width="620" height="24" rx="12" fill="#E5E7EB"/>
+  <rect x="1100" y="76" width="180" height="48" rx="14" fill="#2563EB"/>
+  <text x="1150" y="107" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">+ Add</text>
+
+  <rect x="48" y="188" width="240" height="640" rx="24" fill="#EEF2FF"/>
+  <text x="84" y="236" fill="#1F2937" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Todo</text>
+  <rect x="72" y="266" width="192" height="120" rx="18" fill="#FFFFFF"/>
+  <text x="92" y="308" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Design login page</text>
+  <rect x="92" y="328" width="58" height="26" rx="8" fill="#22D3EE"/>
+  <text x="108" y="346" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">DEV</text>
+  <rect x="72" y="406" width="192" height="120" rx="18" fill="#FFFFFF"/>
+  <text x="92" y="448" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Write API contract</text>
+  <rect x="92" y="468" width="86" height="26" rx="8" fill="#4ADE80"/>
+  <text x="104" y="486" fill="#052E16" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Product</text>
+
+  <rect x="312" y="188" width="240" height="640" rx="24" fill="#EFF6FF"/>
+  <text x="348" y="236" fill="#1F2937" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">In Progress</text>
+  <rect x="336" y="266" width="192" height="142" rx="18" fill="#FFFFFF"/>
+  <text x="356" y="308" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Build board layout</text>
+  <rect x="356" y="328" width="58" height="26" rx="8" fill="#22D3EE"/>
+  <text x="372" y="346" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">DEV</text>
+  <rect x="420" y="328" width="52" height="26" rx="8" fill="#FB7185"/>
+  <text x="436" y="346" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">QA</text>
+
+  <rect x="576" y="188" width="240" height="640" rx="24" fill="#F8FAFC"/>
+  <text x="612" y="236" fill="#1F2937" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Product Review</text>
+  <rect x="600" y="266" width="192" height="120" rx="18" fill="#FFFFFF"/>
+  <text x="620" y="308" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Review dashboard UX</text>
+  <rect x="620" y="328" width="86" height="26" rx="8" fill="#4ADE80"/>
+  <text x="632" y="346" fill="#052E16" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Product</text>
+
+  <rect x="840" y="188" width="240" height="640" rx="24" fill="#ECFEFF"/>
+  <text x="876" y="236" fill="#1F2937" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Testing</text>
+  <rect x="864" y="266" width="192" height="120" rx="18" fill="#FFFFFF"/>
+  <text x="884" y="308" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Test form validation</text>
+  <rect x="884" y="328" width="52" height="26" rx="8" fill="#FB7185"/>
+  <text x="900" y="346" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">QA</text>
+
+  <rect x="1104" y="188" width="240" height="640" rx="24" fill="#F0FDF4"/>
+  <text x="1140" y="236" fill="#1F2937" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Completed</text>
+  <rect x="1128" y="266" width="192" height="120" rx="18" fill="#FFFFFF"/>
+  <text x="1148" y="308" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Store tasks locally</text>
+  <rect x="1148" y="328" width="58" height="26" rx="8" fill="#22D3EE"/>
+  <text x="1164" y="346" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">DEV</text>
+</svg>

@@ -28,27 +28,42 @@ function App() {
   }];
 
   //created a state variable for storing tasks
-  const [taskList, setTaskList] = useState<Array<taskItem>>([]);
+  const [taskList, setTaskList] = useState<Array<taskItem>>(() => {
+    const data: string | null = localStorage.getItem('tasks');
+
+    if (!data) {
+      return [];
+    }
+
+    try {
+      return JSON.parse(data) as Array<taskItem>;
+    } catch (error) {
+      console.error("Unable to parse tasks from local storage", error);
+      return [];
+    }
+  });
 
   //created a method for deleting the task
   const deleteTask = (taskIndex: number) => {
-    setTaskList(() => taskList.filter((_, idx: number) => idx !== taskIndex));
+    setTaskList((prevTaskList) => prevTaskList.filter((_, idx: number) => idx !== taskIndex));
   }
 
-  //fetching the data on page load
-  function fetchTasks() {
-    let data: string | null = localStorage.getItem('tasks');
-    if (data) {
-      //parsing the data
-      const tasks = JSON.parse(data);
-      console.log("Fetched tasks are ", tasks);
-      setTaskList(tasks);
-    }
+  const moveTask = (taskIndex: number, nextStatus: string) => {
+    setTaskList((prevTaskList) => prevTaskList.map((task: taskItem, idx: number) => {
+      if (idx !== taskIndex || task.status === nextStatus) {
+        return task;
+      }
+
+      return {
+        ...task,
+        status: nextStatus
+      };
+    }));
   }
 
   useEffect(() => {
-    fetchTasks();
-  }, [])
+    localStorage.setItem('tasks', JSON.stringify(taskList));
+  }, [taskList])
 
   return (
     <div className="app">
@@ -58,7 +73,7 @@ function App() {
       </header>
       <main className="app-main">
         {categories.map((status: statusType) => (
-          <TaskColumn title={status.label} key={status.value} taskList={taskList} status={status.value} deleteTask={deleteTask} />
+          <TaskColumn title={status.label} key={status.value} taskList={taskList} status={status.value} deleteTask={deleteTask} moveTask={moveTask} />
         ))}
       </main>
     </div>

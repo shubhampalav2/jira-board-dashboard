@@ -1,3 +1,5 @@
+import type { DragEvent } from "react";
+
 export interface taskItem {
     task: string,
     status: string,
@@ -19,12 +21,15 @@ export interface taskColumn {
     title: string,
     taskList: Array<taskItem>,
     status: string,
-    deleteTask: (idx: number) => void
+    deleteTask: (idx: number) => void,
+    moveTask: (taskIndex: number, nextStatus: string) => void
 }
 
 export interface taskCard {
     task: string,
     tags: Array<string>,
     deleteTask: (idx: number) => void,
-    id: number
+    id: number,
+    handleDragStart: (event: DragEvent<HTMLElement>, taskIndex: number) => void,
+    handleDragEnd: () => void
 }

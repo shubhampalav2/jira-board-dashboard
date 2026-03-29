@@ -1,0 +1,38 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1440" height="900" fill="#F8FAFC"/>
+  <text x="72" y="88" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">Drag task cards between workflow columns</text>
+  <text x="72" y="128" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="24">Native drag-and-drop updates the status and keeps the board saved in localStorage.</text>
+
+  <rect x="88" y="196" width="300" height="580" rx="28" fill="#EEF2FF"/>
+  <text x="128" y="250" fill="#1F2937" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">In Progress</text>
+  <rect x="116" y="292" width="244" height="152" rx="22" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="144" y="346" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Implement drag state</text>
+  <rect x="144" y="370" width="62" height="28" rx="9" fill="#22D3EE"/>
+  <text x="162" y="389" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">DEV</text>
+  <rect x="214" y="370" width="56" height="28" rx="9" fill="#FB7185"/>
+  <text x="232" y="389" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">QA</text>
+
+  <rect x="552" y="196" width="300" height="580" rx="28" fill="#DBEAFE" stroke="#2563EB" stroke-width="4"/>
+  <text x="592" y="250" fill="#1F2937" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">Testing</text>
+  <rect x="580" y="292" width="244" height="152" rx="22" fill="#FFFFFF"/>
+  <text x="608" y="346" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Validate drop target</text>
+  <rect x="608" y="370" width="56" height="28" rx="9" fill="#FB7185"/>
+  <text x="626" y="389" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">QA</text>
+  <rect x="674" y="370" width="92" height="28" rx="9" fill="#4ADE80"/>
+  <text x="688" y="389" fill="#052E16" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Product</text>
+
+  <rect x="1016" y="196" width="300" height="580" rx="28" fill="#F0FDF4"/>
+  <text x="1056" y="250" fill="#1F2937" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">Completed</text>
+  <rect x="1044" y="292" width="244" height="152" rx="22" fill="#FFFFFF"/>
+  <text x="1072" y="346" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Persist latest board</text>
+  <rect x="1072" y="370" width="62" height="28" rx="9" fill="#22D3EE"/>
+  <text x="1090" y="389" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">DEV</text>
+
+  <path d="M390 368C452 368 476 368 528 368" stroke="#2563EB" stroke-width="8" stroke-linecap="round" stroke-dasharray="18 18"/>
+  <path d="M520 334L580 368L520 402" fill="none" stroke="#2563EB" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="470" cy="368" r="36" fill="#2563EB"/>
+  <text x="456" y="378" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">D</text>
+
+  <rect x="598" y="500" width="176" height="76" rx="18" fill="#2563EB"/>
+  <text x="628" y="545" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Drop Here</text>
+</svg>
