@@ -112,8 +112,6 @@ src/
 - `npm run preview` previews the production build locally
 
 ## Future Improvements
-
-- Reorder tasks inside the same column
 - Add edit functionality for existing tasks
 - Add due dates, assignees, and priority labels
 - Connect the board to a backend API
